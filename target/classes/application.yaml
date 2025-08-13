@@ -1,0 +1,15 @@
+server:
+  port:8888
+spring:
+  application:
+    name:demo
+  datasource:
+    url:jdbc:dolphindb://172.16.0.184:8001?databasePath=dfs://DayKDB
+    username:maxim
+    password:dyJmoc-tiznem-1figgu
+    driver-class-name:com.dolphindb.jdbc.Driver
+mybatis:
+  mapper-locations:
+    classpath:/mapper/*.xml
+  configuration:
+    auto-mapping-behavior:full
